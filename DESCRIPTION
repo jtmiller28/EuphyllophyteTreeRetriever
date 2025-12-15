@@ -3,7 +3,6 @@ Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Author: JT Miller
-Maintainer: JT Miller millerjared@ufl.edu 
 Description: A package to retrieve trees from Carruther et al. 202x Euphyllophyte analysis
 License: Creative Commons
 Encoding: UTF-8
