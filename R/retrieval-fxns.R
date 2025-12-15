@@ -28,17 +28,17 @@ get_bootstrap_trees <- function(all_trees = TRUE, # if TRUE, output directory wi
   # load required packages
   require(osfr)
   # authorize access (remove later)
-  osf_auth(token = osf_token)
+  osfr::osf_auth(token = osf_token)
 
   # load project
-  project <- osf_retrieve_node("9tbha")
+  project <- osfr::osf_retrieve_node("9tbha")
 
   # if dated trees are target
   if(tree_type == "dated"){
     # list the files to grab in project
-    tree_files <- osf_ls_files(project, n_max = Inf, pattern = "zipped-dated-trees")
+    tree_files <- osfr::osf_ls_files(project, n_max = Inf, pattern = "zipped-dated-trees")
     # download the zipped files
-    osf_download(tree_files, output_dir, conflicts = "overwrite")
+    osfr::osf_download(tree_files, output_dir, conflicts = "overwrite")
     # find path to zip
     path_zip <- file.path(output_dir, "zipped-dated-trees.zip")
     # list the file names inside of the zip
@@ -58,9 +58,9 @@ get_bootstrap_trees <- function(all_trees = TRUE, # if TRUE, output directory wi
   # if undated trees are target
   if(tree_type == "undated"){
     # list the files to grab in project
-    tree_files <- osf_ls_files(project, n_max = Inf, pattern = "zipped-undated-trees")
+    tree_files <- osfr::osf_ls_files(project, n_max = Inf, pattern = "zipped-undated-trees")
     # download the zipped files
-    osf_download(tree_files, output_dir, conflicts = "overwrite")
+    osfr::osf_download(tree_files, output_dir, conflicts = "overwrite")
     # find path to zip
     path_zip <- file.path(output_dir, "zipped-undated-trees.zip")
     # list the file names inside of the zip
