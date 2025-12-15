@@ -13,7 +13,7 @@
 #' @param setSeed Boolean. If you are specifying a number of bootstraps, you can set this to TRUE and specify randomSeed to ensure reproducible bootstrap subsets are gathered
 #' @param randomSeed numeric. Reproducible seed to set if setSeed is TRUE
 #' @param osf_tokjen Character string. The string that authorizes use of the OSF repo, this will be removed once the data is public
-#'
+#' @import osfr
 #' examples
 #' get_bootstrap_trees(all_trees = FALSE, num_trees = 100, output_dir = "path/to/desired/dir/", tree_type = "dated", setSeed = TRUE, randomSeed = 111)
 

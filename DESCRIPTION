@@ -7,3 +7,5 @@ Description: A package to retrieve trees from Carruther et al. 202x Euphyllophyt
 License: Creative Commons
 Encoding: UTF-8
 LazyData: true
+Imports:
+    osfr
