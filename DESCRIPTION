@@ -2,10 +2,9 @@ Package: EuphyllophyteTreeRetriever
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: JT Miller
+Maintainer: millerjared@ufl.edu
+Description: A package to retrieve trees from Carruther et al. 202x Euphyllophyte analysis
+License: Creative Commons
 Encoding: UTF-8
 LazyData: true
