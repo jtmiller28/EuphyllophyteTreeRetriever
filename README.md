@@ -1,4 +1,5 @@
-A github installed R package that offers retrieval of bootstrapped trees from Carruthers et al *in prep*. 
+# EuphyllophyteTreeRetriever
+**EuphyllophyteTreeRetriever**: Retrieve consensus and boostrapped trees from Carruthers et al. *in prep*. 
 
 ## Installation: 
 
@@ -6,5 +7,14 @@ A github installed R package that offers retrieval of bootstrapped trees from Ca
 remotes::install_github("jtmiller28/EuphyllophyteTreeRetriever")
 ```
 
-Current functions include: 
-get_bootstrap_trees() = Allows for downloading dated or undated trees. 
+## Current retrieval functions
+Download bootstrap trees
+``` r
+EuphyllophyteTreeRetriever::get_bootstrap_trees(all_trees = TRUE, # if true, gather all bootstrapped trees available
+                                                num_trees = NA, # if all_trees = FALSE, specify the number of trees to pull (less than or equal to 1004)
+                                                output_dir, # directory where the folder containing the bootstrap trees will be made
+                                                tree_type = "dated", # dated or undated
+                                                setSeed = TRUE, # set to TRUE if you want to make a repeatable subset pull of the bootstraps 
+                                                randomSeed = 111 # if setSeed is TRUE, designate numeric seed
+                                                )
+```
