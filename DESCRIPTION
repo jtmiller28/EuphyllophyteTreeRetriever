@@ -9,3 +9,4 @@ Encoding: UTF-8
 LazyData: true
 Imports:
     osfr
+RoxygenNote: 7.3.3
